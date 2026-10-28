@@ -1,0 +1,1 @@
+export const diamondGradientStyles = `mix-blend-screen bg-[#141414] bg-[linear-gradient(45deg,#a200ff_25%,transparent_25%,transparent_75%,#a200ff_75%),linear-gradient(-45deg,#a200ff_25%,transparent_25%,transparent_75%,#a200ff_75%)] bg-size-[30px_30px]`;
