@@ -3,7 +3,7 @@ import NAVIGATION_CONFIG from '../config/navigation.config';
 
 const Navigation = () => {
   return (
-    <nav className='flex justify-around fixed w-full h-10  z-300 uppercase font-rocknroll text-accent my-1.5'>
+    <nav className='flex justify-around fixed w-full h-10 z-300 uppercase font-rocknroll text-accent mt-3 mb-1.5'>
       {NAVIGATION_CONFIG.map(
         (elNav: { text: string; href: string }, idx: number) => (
           <NavLink
@@ -11,7 +11,7 @@ const Navigation = () => {
             to={elNav.href}
             className={({ isActive }) =>
               `text-xl tracking-widest uppercase transition-all duration-300 relative hover:scale-105 will-change-transform
-              ${isActive ? 'drop-shadow-violet' : ''}`
+              ${isActive ? 'drop-shadow-violet cursor-default' : ''}`
             }
           >
             — {elNav.text} —
