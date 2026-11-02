@@ -3,7 +3,7 @@ import HiroSlide from '../hiroSlide/ui';
 
 const HomePage = () => {
   return (
-    <div className='relative h-screen w-full overflow-hidden bg-[#0c0d14] flex items-center text-white select-none'>
+    <div className='relative h-dvh w-full flex flex-col justify-center overflow-hidden bg-main px-10 pb-5 pt-10'>
       <Outlet />
       <HiroSlide></HiroSlide>
     </div>

@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Forum&display=swap');
 @import 'tailwindcss';
 
 @theme {
-  --font-oswald: 'Oswald', sans-serif;
-  --font-rocknroll: 'RocknRoll One', sans-serif;
+  --font-forum: 'Forum', serif;
+  --font-cinzel: 'Cinzel Decorative', serif;
+  --color-accent: #d4af37;
+  --color-main: #141414;
+  --color-light: #c223f3;
+  --drop-shadow-violet: 0 0 8px rgba(194, 35, 243, 0.8);
 }
 #root {
   display: flex;
@@ -11,5 +15,5 @@
   min-height: 100vh;
 }
 body {
-  font-family: var(--font-oswald);
+  font-family: var(--font-forum);
 }
