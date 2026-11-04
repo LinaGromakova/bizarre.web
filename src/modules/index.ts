@@ -1,3 +1,4 @@
+export { default as JojoSlide } from './JojoSlide/ui/JojoSlide';
 export { default as AboutSlide } from './aboutSlide/ui/AboutSlide';
 export { default as HomePage } from './homepage/HomePage';
 export { default as GalleryPage } from './galleryPage/GalleryPage';

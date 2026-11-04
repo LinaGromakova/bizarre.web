@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 export const VerticalText = ({ className }: { className?: string }) => {
   return (
-    <div className='flex-[25%] flex items-center font-cinzel text-9xl tracking-widest text-accent/50 gap-3 pl-6'>
+    <div className='flex-[25%] flex items-center font-cinzel text-9xl tracking-widest text-accent/50 gap-3'>
       {Array.from({ length: 3 }).map((_, i) => (
         <div
           key={i}

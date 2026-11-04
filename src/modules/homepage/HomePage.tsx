@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router';
-import AboutSlide from '../aboutSlide/ui/AboutSlide';
+// import AboutSlide from '../aboutSlide/ui/AboutSlide';
+import JojoSlide from '../JojoSlide/ui/JojoSlide';
 // import HiroSlide from '../hiroSlide/ui';
 
 const HomePage = () => {
@@ -7,7 +8,8 @@ const HomePage = () => {
     <div className='relative h-dvh w-full flex flex-col justify-center overflow-hidden bg-main px-10 pb-5 pt-10'>
       <Outlet />
       {/* <HiroSlide></HiroSlide> */}
-      <AboutSlide></AboutSlide>
+      {/* <AboutSlide></AboutSlide> */}
+      <JojoSlide></JojoSlide>
     </div>
   );
 };
