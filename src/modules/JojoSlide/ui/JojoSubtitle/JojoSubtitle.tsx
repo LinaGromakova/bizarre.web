@@ -2,7 +2,7 @@ import { Star } from './Star';
 
 export const JojoSubtitle = () => {
   return (
-    <div className='border-l border-r border-white p-10 flex flex-col gap-y-4 pb-10 text-lg tracking-wide leading-relaxed'>
+    <div className='border-l border-r border-accent p-10 flex flex-col gap-y-4 pb-10 text-lg tracking-wide leading-relaxed'>
       <p>
         «Невероятные приключения ДжоДжо» (JoJo’s Bizarre Adventure,
         ジョジョの奇妙な冒険, JoJo no Kimyō na Bōken) — одна из самых

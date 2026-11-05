@@ -9,7 +9,7 @@ const JojoSlide = () => {
       <CollageWrapper />
       <DiamondGradient
         className='fixed inset-0'
-        opacity='7'
+        opacity='0.07'
         color='violet'
         size={55}
       />

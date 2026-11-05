@@ -11,8 +11,8 @@ const HiroSlide = () => {
       <BorderList />
       <DiamondGradient
         className='absolute'
-        color='white'
-        opacity='4'
+        color='#ffffff'
+        opacity='0.04'
         size={45}
       />
       <HiroTitle />

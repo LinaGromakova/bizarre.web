@@ -1,7 +1,8 @@
 import { Outlet } from 'react-router';
-// import AboutSlide from '../aboutSlide/ui/AboutSlide';
+import EvolutionSlide from '../evolutionSlide/ui/EvolutionSlide';
+import AboutSlide from '../aboutSlide/ui/AboutSlide';
 import JojoSlide from '../JojoSlide/ui/JojoSlide';
-// import HiroSlide from '../hiroSlide/ui';
+import HiroSlide from '../hiroSlide/ui';
 
 const HomePage = () => {
   return (
@@ -9,7 +10,8 @@ const HomePage = () => {
       <Outlet />
       {/* <HiroSlide></HiroSlide> */}
       {/* <AboutSlide></AboutSlide> */}
-      <JojoSlide></JojoSlide>
+      {/* <JojoSlide></JojoSlide> */}
+      <EvolutionSlide></EvolutionSlide>
     </div>
   );
 };
