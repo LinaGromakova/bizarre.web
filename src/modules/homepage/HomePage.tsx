@@ -3,6 +3,7 @@ import EvolutionSlide from '../evolutionSlide/ui/EvolutionSlide';
 import AboutSlide from '../aboutSlide/ui/AboutSlide';
 import JojoSlide from '../JojoSlide/ui/JojoSlide';
 import HiroSlide from '../hiroSlide/ui';
+import InspirationSlide from '../inspirationSlide/ui/InspirationSlide';
 
 const HomePage = () => {
   return (
@@ -11,7 +12,8 @@ const HomePage = () => {
       {/* <HiroSlide></HiroSlide> */}
       {/* <AboutSlide></AboutSlide> */}
       {/* <JojoSlide></JojoSlide> */}
-      <EvolutionSlide></EvolutionSlide>
+      {/* <EvolutionSlide></EvolutionSlide> */}
+      <InspirationSlide></InspirationSlide>
     </div>
   );
 };
