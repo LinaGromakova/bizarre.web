@@ -7,11 +7,11 @@ import { DiamondGradient } from '@/shared';
 
 const HiroSlide = () => {
   return (
-    <section className='relative z-10 border-2 border-accent w-full h-full flex flex-col justify-center items-center my-4'>
+    <section className='absolute inset-x-0 mx-auto top-6 sm:top-10 z-10 w-[94%] sm:w-[97%] h-[calc(100%-2.5rem)] sm:h-[93%] flex flex-col justify-end md:justify-center items-center max-lg:overflow-hidden'>
       <BorderList />
       <DiamondGradient
         className='absolute'
-        color='#ffffff'
+        color='#fff'
         opacity='0.04'
         size={45}
       />
@@ -22,4 +22,5 @@ const HiroSlide = () => {
     </section>
   );
 };
+
 export default HiroSlide;

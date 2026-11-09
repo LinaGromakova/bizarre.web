@@ -4,7 +4,7 @@ import type { Swiper as SwiperClass } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-import { EVOLUTION_SLIDES_CONFIG } from '../../config/EvolutionSlides.config';
+import { EVOLUTION_SLIDES } from '../../config/EvolutionSlides.config';
 import { Slide } from './Slide/Slide';
 import { BtnSliderController } from './BtnSliderController/BtnSliderController';
 
@@ -12,11 +12,10 @@ export const EvolutionSlider = () => {
   const [swiperInstance, setSwiperInstance] = useState<SwiperClass | null>(
     null,
   );
-  console.log(EVOLUTION_SLIDES_CONFIG);
   return (
-    <main className='relative flex items-center justify-center w-full max-w-6xl h-10/12 px-16'>
+    <main className='relative flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl px-3 sm:px-8 lg:px-16'>
       <BtnSliderController
-        className='-left-45'
+        className='hidden lg:block lg:-left-7 xl:-left-18'
         type='prev'
         instance={swiperInstance}
       />
@@ -24,22 +23,27 @@ export const EvolutionSlider = () => {
         modules={[Navigation]}
         loop={true}
         onSwiper={setSwiperInstance}
-        className='mySwiper w-full h-full relative z-100'
+        className='mySwiper w-full sm:w-11/12 relative z-20'
       >
-        {EVOLUTION_SLIDES_CONFIG.map((slide, idx) => (
+        {EVOLUTION_SLIDES.map((slide, idx) => (
           <SwiperSlide
-            className='h-full flex flex-col items-center'
+            className='h-full flex flex-col items-center justify-center'
             key={idx}
           >
             <Slide dataSlide={slide} />
           </SwiperSlide>
         ))}
       </Swiper>
-      <BtnSliderController
-        className='-right-45'
-        type='next'
-        instance={swiperInstance}
-      />
+      <div className='flex items-center justify-center gap-8 z-30 lg:contents'>
+        <BtnSliderController
+          type='prev'
+          instance={swiperInstance}
+        />
+        <BtnSliderController
+          type='next'
+          instance={swiperInstance}
+        />
+      </div>
     </main>
   );
 };

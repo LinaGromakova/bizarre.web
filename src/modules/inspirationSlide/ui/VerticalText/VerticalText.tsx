@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 
 export const VerticalText = ({
   className,
@@ -10,11 +11,18 @@ export const VerticalText = ({
   content: string;
 }) => {
   return (
-    <div
+    <motion.div
       className={clsx(
-        'hidden lg:block absolute top-1/2 -translate-y-1/2 z-10 pointer-events-none',
-        position === 'left' ? 'left-0' : 'right-0',
+        'hidden md:block absolute top-1/2 -translate-y-1/2 z-10 pointer-events-none',
+        position === 'left' ? 'left-5' : 'right-5',
       )}
+      initial={{ opacity: 0, y: position === 'left' ? 120 : -120 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.2,
+        ease: [0.22, 1, 0.36, 1],
+      }}
     >
       <p
         className={clsx(
@@ -24,6 +32,6 @@ export const VerticalText = ({
       >
         {content}
       </p>
-    </div>
+    </motion.div>
   );
 };

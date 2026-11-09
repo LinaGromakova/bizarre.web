@@ -3,7 +3,7 @@ import image2 from '../assets/img2.webp';
 import image3 from '../assets/img3.png';
 import image4 from '../assets/img4.jfif';
 
-export const EVOLUTION_SLIDES_CONFIG = [
+export const EVOLUTION_SLIDES = [
   {
     title: 'Эпоха «Мышечного культа» (1987–1992)',
     subtitle:

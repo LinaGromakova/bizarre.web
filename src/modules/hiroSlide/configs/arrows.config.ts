@@ -1,6 +1,30 @@
-export const ARROWS_CONFIG = [
-  'bottom-2 -right-2 rotate-130',
-  'top-2 -right-2 rotate-45',
-  'bottom-2 -left-2 -rotate-130',
-  'top-2 -left-2 -rotate-45',
+export const ARROWS = [
+  {
+    pos: 'bottom-2 -right-2',
+    initialRotate: -50,
+    targetRotate: 130,
+    initialX: -24,
+    initialY: -24,
+  },
+  {
+    pos: 'top-2 -right-2',
+    initialRotate: -135,
+    targetRotate: 45,
+    initialX: -24,
+    initialY: 24,
+  },
+  {
+    pos: 'bottom-2 -left-2',
+    initialRotate: 50,
+    targetRotate: -130,
+    initialX: 24,
+    initialY: -24,
+  },
+  {
+    pos: 'top-2 -left-2',
+    initialRotate: 135,
+    targetRotate: -45,
+    initialX: 24,
+    initialY: 24,
+  },
 ];
