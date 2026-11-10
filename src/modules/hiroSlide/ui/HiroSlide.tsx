@@ -1,33 +1,26 @@
-import { SlideNumber } from '@/shared';
-import AboutBlock from './AboutBlock/AboutBlock';
-import { GradientBlock } from './GradientBlock/GradientBlock';
-import { NamesBlock } from './NamesBlock/NamesBlock';
+import { HiroTitle } from './HiroTitle/HiroTitle';
 import { PortraitWrapper } from './PortraitWrapper/PortraitWrapper';
-import { QuiteBlock } from './QuoteBlock/QuoteBlock';
-import { diamondGradientStyles } from '../styles/diamondGradient';
-import clsx from 'clsx';
+import { StarList } from './StarList/StarList';
+import { ArrowList } from './ArrowList/ArrowList';
+import { BorderList } from './BorderList/BorderList';
+import { DiamondGradient } from '@/shared';
 
 const HiroSlide = () => {
   return (
-    <>
-      <div
-        className={clsx(
-          'absolute inset-0 pointer-events-none z-0 opacity-20 overflow-hidden',
-          diamondGradientStyles,
-        )}
-      ></div>
-      <GradientBlock />
-      <AboutBlock />
-      <div className='relative ml-auto h-full flex justify-end items-center flex-1/2 z-10 pr-12'>
-        <QuiteBlock />
-        <PortraitWrapper />
-        <NamesBlock />
-      </div>
-      <SlideNumber
-        color='[#D50668]/80'
-        number={1}
-      ></SlideNumber>
-    </>
+    <section className='absolute inset-x-0 mx-auto top-6 sm:top-10 z-10 w-[94%] sm:w-[97%] h-[calc(100%-2.5rem)] sm:h-[93%] flex flex-col justify-end md:justify-center items-center max-lg:overflow-hidden'>
+      <BorderList />
+      <DiamondGradient
+        className='absolute'
+        color='#fff'
+        opacity='0.04'
+        size={45}
+      />
+      <HiroTitle />
+      <StarList />
+      <PortraitWrapper />
+      <ArrowList />
+    </section>
   );
 };
+
 export default HiroSlide;

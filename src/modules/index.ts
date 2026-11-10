@@ -1,4 +1,8 @@
-export { default as HomePage } from './homepage/HomePage';
+export { default as InspirationSlide } from './inspirationSlide/ui/InspirationSlide';
+export { default as EvolutionSlide } from './evolutionSlide/ui/EvolutionSlide';
+export { default as JojoSlide } from './JojoSlide/ui/JojoSlide';
+export { default as AboutSlide } from './aboutSlide/ui/AboutSlide';
+export { default as HomePage } from './homepage/ui/HomePage';
 export { default as GalleryPage } from './galleryPage/GalleryPage';
 export { default as ContactsPage } from './contactsPage/ContactsPage';
 export { default as Navigation } from './navigation';
