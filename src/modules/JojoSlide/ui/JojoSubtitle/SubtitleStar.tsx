@@ -15,7 +15,7 @@ export const SubtitleStar = () => {
           },
         },
       }}
-      className='mt-1 lg:mt-2 flex justify-center scale-75 sm:scale-90 xl:scale-90 max-2xs:hidden'
+      className='mt-1 lg:mt-2 flex justify-center scale-75 sm:scale-90 xl:scale-90 max-sm:hidden'
     >
       <Star />
     </motion.div>

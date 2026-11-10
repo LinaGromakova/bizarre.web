@@ -11,7 +11,7 @@ export const BorderList = () => {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 0.2, delay: 0.09 + idx / 10, ease: 'linear' }}
-          className={clsx('absolute bg-accent z-20', border)}
+          className={clsx('absolute bg-accent z-1000', border)}
         />
       ))}
       {CORNERS.map((border, idx) => (
