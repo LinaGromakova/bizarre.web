@@ -19,9 +19,8 @@ const sendMessage = async (params: ParamsInterface) => {
         body: JSON.stringify(params),
       },
     );
-    if (!response.ok) {
-      throw response.status;
-    }
+
+    return response.status;
   } catch (error) {
     console.error('Error sending email:', error);
   }

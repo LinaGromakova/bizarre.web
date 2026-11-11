@@ -1,5 +1,6 @@
 import sendMessage from '../api/sendMessage';
-const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
+
+const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
   const form = e.currentTarget;
   const formData = new FormData(e.currentTarget);
   const userEmail = formData.get('userEmail');
@@ -18,7 +19,6 @@ const handleSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
     },
   };
   form.reset();
-  sendMessage(params);
+  return await sendMessage(params);
 };
 export default handleSubmit;
- 

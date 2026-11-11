@@ -2,10 +2,9 @@ import FeedbackForm from '../feedbackForm';
 
 const ContactsPage = () => {
   return (
-    <>
-      <h3 className='text-center my-7 text-2xl'>Заказ персонального комикса</h3>
+    <div className='w-full h-screen bg-main flex flex-col justify-center'>
       <FeedbackForm></FeedbackForm>
-    </>
+    </div>
   );
 };
 export default ContactsPage;

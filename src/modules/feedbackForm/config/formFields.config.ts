@@ -1,7 +1,7 @@
 export const formFields = [
   {
     name: 'userName',
-    label: 'Ваше имя',
+    label: 'Имя',
     type: 'text',
     component: 'input' as const,
     validation: {
@@ -12,7 +12,7 @@ export const formFields = [
   },
   {
     name: 'userEmail',
-    label: 'Ваш адрес электронной почты',
+    label: 'Электронная почта',
     type: 'email',
     component: 'input' as const,
     validation: {
@@ -32,4 +32,4 @@ export const formFields = [
       errorMessage: 'Опишите заказ подробнее (минимум 200 символов)',
     },
   },
-];
+] as const;
