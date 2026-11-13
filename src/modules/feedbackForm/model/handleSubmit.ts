@@ -18,7 +18,11 @@ const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
       order_id: Date.now().toString(),
     },
   };
-  form.reset();
-  return await sendMessage(params);
+
+  const result = await sendMessage(params);
+  if (result) {
+    form.reset();
+    return result;
+  }
 };
 export default handleSubmit;

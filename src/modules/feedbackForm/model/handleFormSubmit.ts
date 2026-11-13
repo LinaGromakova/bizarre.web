@@ -6,6 +6,7 @@ export const handleFormSubmit = async (
   e: React.SubmitEvent<HTMLFormElement>,
   setErrors: React.Dispatch<React.SetStateAction<Record<string, string>>>,
   setLoading: React.Dispatch<React.SetStateAction<boolean>>,
+  setStatus: React.Dispatch<React.SetStateAction<number | undefined>>,
 ) => {
   e.preventDefault();
   setLoading(true);
@@ -19,5 +20,6 @@ export const handleFormSubmit = async (
   }
   setErrors({});
   const result = await handleSubmit(e);
+  setStatus(result);
   if (result) setLoading(false);
 };

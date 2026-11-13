@@ -17,7 +17,13 @@ export const SubmitButton = ({ isLoading }: { isLoading: boolean }) => {
         className='cursor-pointer bg-accent text-main font-cinzel font-semibold text-sm
             tracking-[0.25em] uppercase px-10 py-4 transition-colors active:scale-95 hover:bg-transparent hover:text-accent border border-accent sm:h-15 h-12 w-67'
       >
-        {isLoading ? 'Отправка...' : 'Оформить заказ'}
+        {isLoading ? (
+          <span>
+            Отправка<span className='animate-pulse inline-block'>...</span>
+          </span>
+        ) : (
+          'Оформить заказ'
+        )}
       </button>
     </motion.div>
   );

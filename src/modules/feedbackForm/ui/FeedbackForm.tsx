@@ -1,23 +1,22 @@
-import { useState } from 'react';
 import { formFields } from '../config/formFields.config';
-import { Background } from './Background/Background';
 import { HeaderForm } from './HeaderForm/HeaderForm';
 import { SubmitButton } from './SubmitButton/SubmitButton';
-import { handleFormSubmit } from '../model/handleFormSubmit';
 import { FormField } from './FormField/FormField';
+import ModalInfo from '@/modules/modalInfo';
+import { useFeedbackForm } from '../hooks/useFeedbackForm';
 
 const FeedbackForm = () => {
-  const [errors, setErrors] = useState<Record<string, string>>({});
-  const [isLoading, setIsLoading] = useState(false);
+  const { errors, isLoading, status, setStatus, onSubmit } = useFeedbackForm();
 
   return (
     <section className='relative h-full flex items-center justify-center px-6 py-16 overflow-hidden'>
-      <Background />
+      <ModalInfo
+        status={status}
+        setStatus={setStatus}
+      />
       <form
         action='#'
-        onSubmit={(e) => {
-          handleFormSubmit(e, setErrors, setIsLoading);
-        }}
+        onSubmit={(e) => onSubmit(e)}
         className='relative z-10 w-full max-w-3xl flex flex-col gap-10'
       >
         <HeaderForm />
