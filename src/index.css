@@ -10,12 +10,22 @@
   --drop-shadow-violet: 0 0 8px rgba(194, 35, 243, 0.8);
   --breakpoint-xs: 32rem;
   --breakpoint-2xs: 23.75rem;
+  --color-coral: #ff6b6b;
 }
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+html::selection {
+  background-color: rgba(194, 35, 243, 0.2);
+}
+html,
+textarea {
+  scrollbar-color: #141414 #d4af37;
+  scrollbar-width: thin;
+}
+
 body {
   font-family: var(--font-forum);
 }

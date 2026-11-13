@@ -1,55 +1,41 @@
-import { useState } from 'react';
-import handleSubmit from '../model/handleSubmit';
 import { formFields } from '../config/formFields.config';
-import validateForm from '../model/validateForm';
-import clsx from 'clsx';
+import { HeaderForm } from './HeaderForm/HeaderForm';
+import { SubmitButton } from './SubmitButton/SubmitButton';
+import { FormField } from './FormField/FormField';
+import ModalInfo from '@/modules/modalInfo';
+import { useFeedbackForm } from '../hooks/useFeedbackForm';
 
 const FeedbackForm = () => {
-  const [errors, setErrors] = useState<Record<string, string>>({});
+  const { errors, isLoading, status, setStatus, onSubmit } = useFeedbackForm();
+
   return (
-    <form
-      action='#'
-      onSubmit={(e) => {
-        e.preventDefault();
-        const formData = new FormData(e.currentTarget);
-        const formErrors = validateForm(formData, formFields);
-        if (Object.keys(formErrors).length > 0) {
-          setErrors(formErrors);
-          return;
-        }
-        setErrors({});
-        handleSubmit(e);
-      }}
-      className='w-1/3 flex flex-col bg-red-300 mx-auto p-4'
-    >
-      {formFields.map((field) => {
-        const Tag = field.component;
-        return (
-          <label
-            key={field.name}
-            className='flex flex-col gap-1'
-          >
-            <span className='font-medium text-gray-800'>{field.label}</span>
-            <Tag
-              type={field.component === 'input' ? field.type : undefined}
-              name={field.name}
-              className={clsx(
-                'bg-white p-2 rounded border',
-                errors[field.name]
-                  ? 'border-red-500 bg-red-50'
-                  : 'border-gray-300',
-              )}
-            />
-            {errors[field.name] && (
-              <span className='text-red-600 text-xs font-semibold mt-0.5'>
-                {errors[field.name]}
-              </span>
-            )}
-          </label>
-        );
-      })}
-      <button className='cursor-pointer'>Отправить</button>
-    </form>
+    <section className='relative h-full flex items-center justify-center px-6 py-16 overflow-hidden'>
+      <ModalInfo
+        status={status}
+        setStatus={setStatus}
+      />
+      <form
+        action='#'
+        onSubmit={(e) => onSubmit(e)}
+        className='relative z-10 w-full max-w-3xl flex flex-col gap-10'
+      >
+        <HeaderForm />
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+          {formFields.map((field, idx) => {
+            return (
+              <FormField
+                key={idx}
+                idx={idx}
+                errors={errors}
+                field={field}
+              />
+            );
+          })}
+        </div>
+        <SubmitButton isLoading={isLoading} />
+      </form>
+    </section>
   );
 };
+
 export default FeedbackForm;
