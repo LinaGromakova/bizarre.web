@@ -11,4 +11,16 @@ export default defineConfig({
       '@': path.resolve(import.meta.dirname, './src'),
     },
   },
+  server: {
+    proxy: {
+      '/shiki-api': {
+        target: 'https://shikimori.io',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/shiki-api/, '/api'),
+        headers: {
+          'User-Agent': 'Bizarre.web/1.0',
+        },
+      },
+    },
+  },
 });

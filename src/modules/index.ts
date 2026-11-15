@@ -1,9 +1,11 @@
+export { default as GalleryPage } from './galleryPage';
+export { default as MangaInfo } from './mangaInfo';
+export { default as MangaCards } from './mangaCards';
 export { default as ModalInfo } from './modalInfo/ui/ModalInfo';
 export { default as InspirationSlide } from './inspirationSlide/ui/InspirationSlide';
 export { default as EvolutionSlide } from './evolutionSlide/ui/EvolutionSlide';
 export { default as JojoSlide } from './JojoSlide/ui/JojoSlide';
 export { default as AboutSlide } from './aboutSlide/ui/AboutSlide';
 export { default as HomePage } from './homepage/ui/HomePage';
-export { default as GalleryPage } from './galleryPage/GalleryPage';
 export { default as ContactsPage } from './contactsPage/ui/ContactsPage';
 export { default as Navigation } from './navigation';

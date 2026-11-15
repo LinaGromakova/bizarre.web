@@ -1,4 +1,4 @@
-export interface MangaInterface {
+export default interface MangaInterface {
   coverImage: string;
   description: string;
   genres: string[];
