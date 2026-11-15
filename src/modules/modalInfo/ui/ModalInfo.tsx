@@ -10,6 +10,7 @@ const ModalInfo = ({
   setStatus: React.Dispatch<React.SetStateAction<number | undefined>>;
 }) => {
   useEffect(() => {
+    if (!status) return;
     const timeout = setTimeout(() => {
       setStatus(undefined);
     }, 4000);

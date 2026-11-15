@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/shiki-api/:path*",
+      "destination": "/api/shiki"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

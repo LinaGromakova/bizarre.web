@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Forum&family=Shippori+Antique+B1&display=swap');
 @import 'tailwindcss';
 
 @theme {
   --font-forum: 'Forum', serif;
   --font-cinzel: 'Cinzel Decorative', serif;
+  --font-shippori: 'Shippori Antique B1', sans-serif;
   --color-accent: #d4af37;
   --color-main: #141414;
   --color-light: #c223f3;
@@ -25,7 +26,10 @@ textarea {
   scrollbar-color: #141414 #d4af37;
   scrollbar-width: thin;
 }
-
 body {
   font-family: var(--font-forum);
+}
+.scroll-small {
+  scrollbar-color: #4307b18f #141414;
+  scrollbar-width: thin;
 }
