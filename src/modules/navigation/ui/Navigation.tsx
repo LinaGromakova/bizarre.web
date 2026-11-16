@@ -11,7 +11,7 @@ const Navigation = () => {
     <nav className='fixed w-full md:h-10 z-300 uppercase font-rocknroll text-accent mt-0 md:mt-2 mb-1.5'>
       <button
         type='button'
-        className='relative z-20 md:hidden text-xl tracking-widest drop-shadow-violet flex justify-center left-1/2 -translate-x-1/2'
+        className='relative z-20 mt-0.5 md:hidden text-xl tracking-widest drop-shadow-violet flex justify-center left-1/2 -translate-x-1/2'
         onClick={() => setMenuIsOpen(!menuIsOpen)}
       >
         <NavigationAnimate text='MENU' />

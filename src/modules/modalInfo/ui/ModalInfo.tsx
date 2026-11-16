@@ -2,13 +2,11 @@ import { useEffect } from 'react';
 import '../styles/animateModal.css';
 import { MODAL_CONTENT } from '../config/modal.config';
 
-const ModalInfo = ({
-  status,
-  setStatus,
-}: {
+interface ModalInfoProps {
   status: number | undefined;
   setStatus: React.Dispatch<React.SetStateAction<number | undefined>>;
-}) => {
+}
+const ModalInfo = ({ status, setStatus }: ModalInfoProps) => {
   useEffect(() => {
     if (!status) return;
     const timeout = setTimeout(() => {

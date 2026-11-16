@@ -6,15 +6,16 @@ import { LightsLayout } from './LighstLayout/LightsLayout';
 import type { MangaInterface } from '@/shared';
 import type { SwiperClass } from 'swiper/react';
 
+interface MangaCardsProps {
+  mangaList: MangaInterface[];
+  swiperRef: React.RefObject<SwiperClass | null>;
+  setActiveIdx: React.Dispatch<React.SetStateAction<number>>;
+}
 const MangaCards = ({
   mangaList,
   swiperRef,
   setActiveIdx,
-}: {
-  mangaList: MangaInterface[];
-  swiperRef: React.RefObject<SwiperClass | null>;
-  setActiveIdx: React.Dispatch<React.SetStateAction<number>>;
-}) => {
+}: MangaCardsProps) => {
   return (
     <div className='relative shrink-0 flex items-center justify-center'>
       <LightsLayout />
@@ -42,6 +43,8 @@ const MangaCards = ({
             <img
               src={manga.coverImage}
               className='w-full h-full pointer-events-none'
+              loading='lazy'
+              decoding='async'
               alt={manga.title}
             />
           </SwiperSlide>

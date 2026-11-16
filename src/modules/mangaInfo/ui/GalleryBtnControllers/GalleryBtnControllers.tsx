@@ -4,19 +4,22 @@ import type React from 'react';
 import { styles } from './styles/styles';
 import type { SwiperClass } from 'swiper/react';
 
+interface GalleryBtnControllerProps {
+  activeIdx: number;
+  ref: React.RefObject<SwiperClass | null>;
+  mangaListLen: number;
+}
 export const GalleryBtnController = ({
   activeIdx,
   ref,
   mangaListLen,
-}: {
-  activeIdx: number;
-  ref: React.RefObject<SwiperClass | null>;
-  mangaListLen: number;
-}) => {
+}: GalleryBtnControllerProps) => {
   return (
     <div className='flex items-center justify-center lg:justify-start gap-4 pt-6'>
       {BTN_CONTROLLERS.map((btn, idx) => (
         <button
+          type='button'
+          title={btn.text}
           key={idx}
           onClick={() =>
             btn.action === 'prev'

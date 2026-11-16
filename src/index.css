@@ -7,7 +7,6 @@
   --font-shippori: 'Shippori Antique B1', sans-serif;
   --color-accent: #d4af37;
   --color-main: #141414;
-  --color-light: #c223f3;
   --drop-shadow-violet: 0 0 8px rgba(194, 35, 243, 0.8);
   --breakpoint-xs: 32rem;
   --breakpoint-2xs: 23.75rem;
@@ -32,4 +31,9 @@ body {
 .scroll-small {
   scrollbar-color: #4307b18f #141414;
   scrollbar-width: thin;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
