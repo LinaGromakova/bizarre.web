@@ -6,7 +6,7 @@ export const useFeedbackForm = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [status, setStatus] = useState<undefined | number>(undefined);
   const onSubmit = (e: React.SubmitEvent<HTMLFormElement>) => {
-    handleFormSubmit(e, setErrors, setIsLoading, setStatus);
+    handleFormSubmit({ e, setErrors, setIsLoading, setStatus });
   };
 
   return { errors, isLoading, status, setStatus, onSubmit };

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export const HeaderForm = () => {
   return (
-    <header className='pb-6 flex flex-col md:flex-row md:items-end justify-between gap-4 relative'>
+    <header className='md:pb-6 pb-1 flex flex-col md:flex-row md:items-end justify-between gap-4 relative'>
       <motion.div
         className='absolute w-full h-px bg-accent/30 bottom-0'
         initial={{ width: 0 }}

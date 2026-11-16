@@ -1,6 +1,6 @@
-import { ContactsPage, GalleryPage, HomePage, NotFoundPage } from '@/modules';
 import { createBrowserRouter } from 'react-router';
 import Layout from '../layout/Layout';
+import { ContactsPage, GalleryPage, HomePage, NotFoundPage } from '@/pages';
 const router = createBrowserRouter([
   {
     path: '/',

@@ -10,10 +10,11 @@ export const SubmitButton = ({ isLoading }: { isLoading: boolean }) => {
         delay: 1.2,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className='flex sm:justify-end justify-center pt-2'
+      className='flex sm:justify-end justify-center md:pt-2'
     >
       <button
         type='submit'
+        title='Оформить заказ'
         className='cursor-pointer bg-accent text-main font-cinzel font-semibold text-sm
             tracking-[0.25em] uppercase px-10 py-4 transition-colors active:scale-95 hover:bg-transparent hover:text-accent border border-accent sm:h-15 h-12 w-67'
       >

@@ -32,3 +32,8 @@ body {
   scrollbar-color: #4307b18f #141414;
   scrollbar-width: thin;
 }
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}

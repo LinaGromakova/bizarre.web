@@ -7,19 +7,21 @@ import { MangaInfoHeader } from './MangaInfoHeader/MangaInfoHeader';
 import type { MangaInterface } from '@/shared';
 import type { SwiperClass } from 'swiper/react';
 
+interface MangaInfoProps {
+  activeManga: MangaInterface;
+  activeIdx: number;
+  mangaListLen: number;
+  ref: React.RefObject<SwiperClass | null>;
+}
+
 const MangaInfo = ({
   activeManga,
   activeIdx,
   mangaListLen,
   ref,
-}: {
-  activeManga: MangaInterface;
-  activeIdx: number;
-  mangaListLen: number;
-  ref: React.RefObject<SwiperClass | null>;
-}) => {
+}: MangaInfoProps) => {
   return (
-    <div className='flex-1 max-w-xl w-full h-auto lg:h-[490px] text-center lg:text-left flex flex-col justify-between gap-6'>
+    <div className='flex-1 max-w-xl w-full h-auto lg:h-122.5 text-center lg:text-left flex flex-col justify-between gap-6'>
       {activeManga && (
         <motion.div
           key={activeManga.mangaId}

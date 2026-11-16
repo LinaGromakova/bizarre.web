@@ -1,12 +1,13 @@
+interface MangaInfoHeaderProps {
+  activeIdx: number;
+  mangaListLen: number;
+  releaseYear: number;
+}
 export const MangaInfoHeader = ({
   activeIdx,
   mangaListLen,
   releaseYear,
-}: {
-  activeIdx: number;
-  mangaListLen: number;
-  releaseYear: number;
-}) => {
+}: MangaInfoHeaderProps) => {
   return (
     <header className='flex items-center gap-1.5 sm:gap-3 px-3.5 py-1 text-accent font-black text-xs tracking-[0.2em] uppercase -skew-x-12 shadow-[0_0_18px_rgba(212,175,55,0.4)] w-fit'>
       <span className='skew-x-12'>
