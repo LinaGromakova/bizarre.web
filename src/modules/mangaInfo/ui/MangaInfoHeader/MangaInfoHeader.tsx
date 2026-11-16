@@ -13,9 +13,20 @@ export const MangaInfoHeader = ({
         {String(activeIdx + 1).padStart(2, '0')} /
         {String(mangaListLen).padStart(2, '0')}
       </span>
+
       {releaseYear && (
         <span className='skew-x-12 opacity-80'>• {releaseYear}</span>
       )}
+      <span className='text-purple-200/50 sm:text-[10px] text-[8px]'>
+        Данные:{' '}
+        <a
+          href='https://shikimori.io/api/doc'
+          className='hover:text-purple-200 transition-colors'
+          target='_blank'
+        >
+          Shikimori API
+        </a>
+      </span>
     </header>
   );
 };

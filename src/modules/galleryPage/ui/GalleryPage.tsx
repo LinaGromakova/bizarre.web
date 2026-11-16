@@ -1,5 +1,4 @@
-import { DiamondGradient } from '@/shared';
-import { EffectsLayout } from './EffectsLayout/EffectsLayout';
+import { DiamondGradient, EffectsLayout } from '@/shared';
 import { useMangaInfo } from '../hooks/useMangaInfo';
 import { GalleryLoading } from './GalleryLoading/GalleryLoading';
 import MangaCards from '@/modules/mangaCards';
@@ -24,7 +23,10 @@ const GalleryPage = () => {
         color='#fff'
         opacity='0.04'
       />
-      <EffectsLayout />
+      <EffectsLayout
+        className1='absolute right-[6%] top-[10%] text-7xl sm:text-9xl'
+        className2='absolute left-[5%] bottom-[12%] text-6xl sm:text-8xl'
+      />
       {mangaList.length === 0 ? (
         <GalleryLoading />
       ) : (

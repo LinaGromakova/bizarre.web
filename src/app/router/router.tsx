@@ -1,24 +1,24 @@
-import { ContactsPage, GalleryPage, HomePage } from '@/modules';
+import { ContactsPage, GalleryPage, HomePage, NotFoundPage } from '@/modules';
 import { createBrowserRouter } from 'react-router';
 import Layout from '../layout/Layout';
-
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout></Layout>,
+    element: <Layout />,
     children: [
       {
         path: '/',
-        element: <HomePage></HomePage>,
+        element: <HomePage />,
       },
       {
         path: '/gallery',
-        element: <GalleryPage></GalleryPage>,
+        element: <GalleryPage />,
       },
       {
         path: '/contacts',
-        element: <ContactsPage></ContactsPage>,
+        element: <ContactsPage />,
       },
+      { path: '*', element: <NotFoundPage /> },
     ],
   },
 ]);

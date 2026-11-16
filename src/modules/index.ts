@@ -1,3 +1,4 @@
+export { default as NotFoundPage } from './notFoundPage';
 export { default as GalleryPage } from './galleryPage';
 export { default as MangaInfo } from './mangaInfo';
 export { default as MangaCards } from './mangaCards';
