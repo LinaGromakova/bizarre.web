@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import ArakiPhoto from './assets/ArakiPhoto.jpg';
+import ArakiPhoto from './assets/ArakiPhoto.avif';
 
 export const PortraitWrapper = () => {
   return (

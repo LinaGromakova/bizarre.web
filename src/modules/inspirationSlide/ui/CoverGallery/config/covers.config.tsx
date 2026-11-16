@@ -1,6 +1,6 @@
-import Image1 from '../assets/cover1.jfif';
-import Image2 from '../assets/cover2.webp';
-import Image3 from '../assets/cover3.jfif';
+import Image1 from '../assets/cover1.avif';
+import Image2 from '../assets/cover2.avif';
+import Image3 from '../assets/cover3.avif';
 
 export const COVERS = [
   { image: Image1, style: '-rotate-6 -mr-4 sm:-mr-3 md:mr-0' },

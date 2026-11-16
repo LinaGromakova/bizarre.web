@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import PortraitImage from './assets/Hirohiko.png';
+import PortraitImage from './assets/Hirohiko.avif';
 
 export const PortraitWrapper = () => {
   return (

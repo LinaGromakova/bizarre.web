@@ -1,7 +1,7 @@
-import image1 from '../assets/img1.jpg';
-import image2 from '../assets/img2.webp';
-import image3 from '../assets/img3.png';
-import image4 from '../assets/img4.jfif';
+import image1 from '../assets/img1.avif';
+import image2 from '../assets/img2.avif';
+import image3 from '../assets/img3.avif';
+import image4 from '../assets/img4.avif';
 
 export const EVOLUTION_SLIDES = [
   {

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import JojoImg from './assets/Jojo.png';
+import JojoImg from './assets/Jojo.avif';
 
 export const CharacterImg = () => {
   return (

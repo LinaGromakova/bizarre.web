@@ -15,7 +15,7 @@ export const JojoTitle = () => {
         },
       }}
     >
-      <h1 className='flex -rotate-6 items-center font-black tracking-tight relative z-10 bg-linear-to-b from-white via-fuchsia-400 to-light bg-clip-text text-transparent font-cinzel pr-2'>
+      <h1 className='flex -rotate-6 items-center font-black tracking-tight relative z-10 bg-linear-to-b from-white via-fuchsia-400 to-purple-700 bg-clip-text text-transparent font-cinzel pr-2'>
         {[..."JOJO'S"].map((char, index) => (
           <span
             key={index}

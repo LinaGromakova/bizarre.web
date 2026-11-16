@@ -25,7 +25,7 @@ export const Background = () => {
           },
         }}
       >
-        <StarIcon className='w-64 h-64 text-light' />
+        <StarIcon className='w-64 h-64 text-purple-500' />
       </motion.div>
       <motion.div
         className='absolute right-[3%] bottom-1/2 opacity-5 pointer-events-none z-0 -rotate-12'
@@ -44,7 +44,7 @@ export const Background = () => {
           },
         }}
       >
-        <StarIcon className='w-80 h-80 text-light' />
+        <StarIcon className='w-80 h-80 text-purple-500' />
       </motion.div>
     </>
   );

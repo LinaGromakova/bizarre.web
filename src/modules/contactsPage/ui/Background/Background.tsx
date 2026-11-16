@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import BackgroundImage from '../../assets/background.jfif';
+import BackgroundImage from '../../assets/background.avif';
 
 export const Background = () => {
   return (
