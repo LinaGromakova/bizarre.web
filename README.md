@@ -79,8 +79,7 @@ src/
 
 | Главная страница | Страница галереи |
 | :---: | :---: |
-| ![Главная страница]() | ![Галерея]() |
-
-| Демонстрационная форма заказа | Страница ошибки 404 |
+| ![Главная страница(1 секция)](https://github.com/user-attachments/assets/4b597a0a-b349-4197-93e4-a1603fb0e3a5) | ![Галерея](https://github.com/user-attachments/assets/a77414d0-b365-4cac-9efb-b8d9d68daf5f) |
+| ![Страница ошибки 404](https://github.com/user-attachments/assets/74146de9-ed75-4604-bc6d-d8a0d5c45bc2) |
 | :---: | :---: |
-| ![Форма заказа]() | !() |
+| ![Форма заказа](https://github.com/user-attachments/assets/be6c8c9a-68ee-48a1-b125-f8793098a4dc) | !() |
