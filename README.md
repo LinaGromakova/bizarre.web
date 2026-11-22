@@ -50,7 +50,7 @@ src/
 1. **Клонирование репозитория и установка зависимостей:**
    ```bash
    git clone https://github.com
-   cd <repo name>
+   cd bizarre.web
    npm install
    ```
 
