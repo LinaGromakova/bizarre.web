@@ -77,8 +77,13 @@ src/
 
 ## 5. Внешний вид интерфейса
 
-| Главная страница | Страница галереи |
-| :---: | :---: |
-| ![Главная страница(1 секция)](https://github.com/user-attachments/assets/4b597a0a-b349-4197-93e4-a1603fb0e3a5) | ![Галерея](https://github.com/user-attachments/assets/a77414d0-b365-4cac-9efb-b8d9d68daf5f) |
-| Страница заказа персонального комикса | Страница ошибки 404 |
-| ![Форма заказа](https://github.com/user-attachments/assets/be6c8c9a-68ee-48a1-b125-f8793098a4dc) | ![Страница ошибки 404](https://github.com/user-attachments/assets/74146de9-ed75-4604-bc6d-d8a0d5c45bc2)
+| Секция/Страница | Десктоп | Мобильная версия |
+| :---: | :---: | :---: |
+| **1. Приветственная секция** | <img src="https://github.com/user-attachments/assets/4d9a0acb-dc7e-4fcf-8c1f-67d25ec63cd8" width="380"> | <img src="https://github.com/user-attachments/assets/2fbd0c8d-bfeb-4651-9e13-649055dc4837" width="130"> |
+| **2. О мангаке** | <img src="https://github.com/user-attachments/assets/7f81b20e-3b49-4a7f-89a3-40e49933de71" width="380"> | <img src="https://github.com/user-attachments/assets/45670444-0f2f-45b4-b518-2345e26dcad4" width="130"> |
+| **3. О «JoJo's Bizarre Adventure»** | <img src="https://github.com/user-attachments/assets/52f0c297-c142-4d6b-bd9d-0d807c2f7b1c" width="380"> | <img src="https://github.com/user-attachments/assets/080366f7-cb1e-474e-978d-740f21e9a662" width="130"> |
+| **4. Эволюция стиля художника** | <img src="https://github.com/user-attachments/assets/b660d31e-3bc9-4730-8b6c-8bfe53ad83c6" width="380"> | <img src="https://github.com/user-attachments/assets/74e7a26a-e764-42a9-9d91-1fe004831a12" width="130"> |
+| **5. Вдохновение высокой модой** | <img src="https://github.com/user-attachments/assets/cc33a451-a31a-454f-91c2-62d7f5d4a78c" width="380"> | <img src="https://github.com/user-attachments/assets/723ed162-a9d0-4f86-999c-a63f5596d9ad" width="130"> |
+| **Страница галереи** | <img src="https://github.com/user-attachments/assets/a77414d0-b365-4cac-9efb-b8d9d68daf5f" width="380"> | <img src="https://github.com/user-attachments/assets/8a2dac18-1e64-4811-adae-24dfc58459c4" width="130"> |
+| **Страница заказа персонального комикса** | <img src="https://github.com/user-attachments/assets/be6c8c9a-68ee-48a1-b125-f8793098a4dc" width="380"> | <img src="https://github.com/user-attachments/assets/8d6aa31e-4ce9-44cf-b4c8-26d0b77f19b7" width="130"> |
+| **Страница ошибки 404** | <img src="https://github.com/user-attachments/assets/74146de9-ed75-4604-bc6d-d8a0d5c45bc2" width="380"> | <img src="https://github.com/user-attachments/assets/3875a749-edd7-428c-9532-6753970871f9" width="130"> |
